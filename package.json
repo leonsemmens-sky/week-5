@@ -1,0 +1,26 @@
+{
+  "name": "week-5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:d1:easy:create-and-delete": "jest ./tests/d1/easy/create-and-delete --silent --runInBand --verbose",
+    "test:d1:easy:crud": "jest ./tests/d1/easy/crud --silent --runInBand --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swe-assignments/week-5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swe-assignments/week-5/issues"
+  },
+  "homepage": "https://github.com/swe-assignments/week-5#readme",
+  "dependencies": {
+    "jest": "^29.2.2",
+    "sequelize": "^6.25.3",
+    "sqlite3": "^5.1.2"
+  }
+}

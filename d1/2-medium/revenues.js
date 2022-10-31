@@ -10,7 +10,7 @@ const { dbMedium } = require('../../db/db-medium');
 // 3               |   "2021"      |  50
 
 async function selectPositiveRevenue() {
-  return dbMedium.query();
+  return dbMedium.query(`SELECT TeamId FROM Teams WHERE Year="2021" AND Revenue>0`);
 }
 
 module.exports = { selectPositiveRevenue };

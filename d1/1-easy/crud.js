@@ -2,7 +2,7 @@ const { db } = require('../../db/db');
 
 //Add new user into Users table => name: "Rose", role: "super admin"
 async function insertRow() {
-  await db.query(``);
+  await db.query();
 }
 
 //There is a user in the table called Barrie.  Change their role to "deactivated"

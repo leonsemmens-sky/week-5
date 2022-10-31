@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test:d1:easy:create-and-delete": "jest ./tests/d1/easy/create-and-delete --silent --runInBand --verbose",
-    "test:d1:easy:crud": "jest ./tests/d1/easy/crud --silent --runInBand --verbose"
+    "test:d1:easy:crud": "jest ./tests/d1/easy/crud --silent --runInBand --verbose",
+    "test:d1:medium:revenues": "jest ./tests/d1/medium/revenues --runInBand --verbose"
   },
   "repository": {
     "type": "git",

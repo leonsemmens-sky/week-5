@@ -4,6 +4,9 @@ const db = new Sequelize({
   dialect: 'sqlite',
   storage: ':memory:',
   logging: false,
+  define: {
+    timestamps: false,
+  },
 });
 
 async function seed() {

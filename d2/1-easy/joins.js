@@ -24,3 +24,10 @@ async function employeeOS() {
 }
 
 employeeOS();
+
+async function employeeNameAndPreviousJobTitles() {
+  const test = await db.query(``);
+  console.log(test);
+}
+
+employeeNamePreviousJobTitles();

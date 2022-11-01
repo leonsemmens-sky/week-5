@@ -30,4 +30,4 @@ async function employeeNameAndPreviousJobTitles() {
   console.log(test);
 }
 
-employeeNamePreviousJobTitles();
+employeeNameAndPreviousJobTitles();

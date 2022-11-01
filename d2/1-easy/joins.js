@@ -7,6 +7,8 @@
 
 // main();
 
+// You know the database now. What can you do with it? Look at the name of the functions provided: what query would give you the desired rows?
+
 const { db } = require('../db/db');
 
 async function employeeNameAndJobTitle() {

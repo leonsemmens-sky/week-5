@@ -3,7 +3,7 @@ const { dbMedium, seedMedium } = require('../../../db/db-medium');
 
 beforeAll(() => seedMedium());
 
-test('Rose has right properties', async () => {
+test('Returns teams with positive revenue in year 2021 ', async () => {
   let [data, _meta] = await selectPositiveRevenue();
   //   const [data, _meta] = await dbMedium.query('`SELECT TeamID FROM Teams WHERE revenue > 0`');
   console.log(data);

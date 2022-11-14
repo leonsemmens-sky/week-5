@@ -1,5 +1,5 @@
 const { createTable, deleteTable } = require('../../../d1/1-easy/create-and-delete');
-const { db } = require('../../../db/db');
+const { db } = require('../../../d1/db/db');
 
 test('Table exists after creating', async () => {
   await db.query('DROP TABLE IF EXISTS Users');

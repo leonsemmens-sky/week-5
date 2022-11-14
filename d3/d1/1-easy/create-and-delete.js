@@ -1,15 +1,23 @@
 const { db } = require('../db/db');
+const User = require('../models/users.model');
+
 //Create a table called Users with the fields of name and role. Both are text fields.
 
 async function createTable() {
-  await db.query(`CREATE TABLE Users (
-    name TEXT,
-    role TEXT
-  )`);
+  User.init({
+    name: {
+      type: DataTypes.TEXT
+    },
+    role: {
+      type: DataTypes.TEXT
+    }
+  }, {
+    sequelize: db
+  })
 }
 //Write a function that will delete the Users table.
 async function deleteTable() {
-  await db.query(`DROP TABLE Users`);
+  await User.drop()
 }
 
 module.exports = { createTable, deleteTable };

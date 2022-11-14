@@ -1,5 +1,5 @@
 const { insertRow, updateRow, deleteRows } = require('../../../d1/1-easy/crud');
-const { db, seed } = require('../../../db/db');
+const { db, seed } = require('../../../d1/db/db');
 
 beforeAll(() => seed());
 

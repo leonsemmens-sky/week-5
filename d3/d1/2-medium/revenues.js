@@ -1,4 +1,6 @@
+const { Op } = require('sequelize');
 const { dbMedium } = require('../db/db-medium');
+const Team = require('../models/teams.model');
 
 //Query the table below.  Select the teamID of any team that had a positive revenue in "2021"
 //TeamID (Integer) ,  Year (Text),  Revenue (Integer)
@@ -10,7 +12,15 @@ const { dbMedium } = require('../db/db-medium');
 // 3               |   "2021"      |  50
 
 async function selectPositiveRevenue() {
-  return dbMedium.query(`SELECT TeamId FROM Teams WHERE Year="2021" AND Revenue>0`);
+  // return dbMedium.query(`SELECT TeamId FROM Teams WHERE Year="2021" AND Revenue>0`);
+  return await Team.findAll({
+    where: {
+      Year: "2021",
+      Revenue: {
+        [Op.gt]: 0
+      }
+    }
+  })
 }
 
 module.exports = { selectPositiveRevenue };
